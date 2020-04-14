@@ -1,0 +1,152 @@
+/*Navbar*/
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand {
+	font-family: viga;
+	color: white;
+	font-size: 32px;
+}
+
+/*Jumbroton*/
+.jumbotron {
+	background-image: url(img/workingspace.png);
+	background-size: cover;
+	height: auto;
+	position: relative;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::After {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4 {
+	font-family: viga;
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+	text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.7 );
+	font-size: 30px;
+}
+
+.jumbotron .display-4 span {
+	text-align: center;
+	font-weight: 500;
+}
+
+.jumbotron img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jumbotron .rekening {
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+
+.jumbotron .card{
+	font-size: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: viga;
+}
+.jumbotron .card p {
+	font-size: 15px;
+	font-family: viga;
+}
+
+.jumbotron .textupload {
+	text-align: center;
+	color: white;
+	font-family: viga;
+}
+
+.jumbotron .tombol {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*footer*/
+.footer p {
+	margin-top: 10px;
+	color: #acacac;
+	font-size: 10px;
+}
+
+
+
+/*DESKTOP VERSION*/
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0b63dc;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -75px;
+		height: auto;
+	}
+	.jumbotron .display-4 {
+		font-size: 40px;
+	}
+
+	.jumbotron img {
+		width: 20%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.jumbotron .rekening {
+		font-size: 30px;
+		text-align: center;
+		color: white;
+	}
+
+	.jumbotron .card {
+		width: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: viga;
+	}
+
+	.jumbotron .tombol {
+		width: 20%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
